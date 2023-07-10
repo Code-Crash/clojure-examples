@@ -1,7 +1,7 @@
 (ns examples.basic.vector)
 
 
-(println "\nVector: \n")
+(println "\n#################### Vector #################### \n")
 
 ;; 
 ;; VECTOR (ARRAY): 

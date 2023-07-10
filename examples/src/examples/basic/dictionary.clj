@@ -1,7 +1,7 @@
 (ns examples.basic.dictionary)
 
 
-(println "\nMap: \n")
+(println "\n #################### Map #################### \n")
 
 ;; 
 ;; Map (Dictionary): 

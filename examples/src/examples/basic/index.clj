@@ -1,7 +1,10 @@
 (ns examples.basic.index
-  (:require [examples.basic.vector]
-            [examples.basic.list]
-            [examples.basic.dictionary]
-            [examples.basic.functions]))
+  (:require
+   [examples.basic.literals]
+   [examples.basic.vector]
+   [examples.basic.list]
+   [examples.basic.set]
+   [examples.basic.dictionary]
+   [examples.basic.functions]))
 
 ;; (println "Something!")

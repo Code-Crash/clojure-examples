@@ -1,6 +1,6 @@
 (ns examples.basic.list)
 
-(println "\nList: \n")
+(println "\n#################### List #################### \n")
 
 ;; 
 ;; List

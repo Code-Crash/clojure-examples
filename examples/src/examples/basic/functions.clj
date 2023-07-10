@@ -1,7 +1,6 @@
 (ns examples.basic.functions)
 
-(println "\nFunctions: \n")
-
+(println "\n #################### Functions #################### \n")
 
 ;; 
 ;; 
@@ -61,7 +60,7 @@
 ;; 
 ;; Example:
 ;; 
-(println "\n1. Basic Function Definition and Invocation:\n\nOutputs:\n")
+(println "\n1. Basic Function Definition and Invocation Outputs:\n")
 (defn greet [name]
   (println "Hello, " name))
 ;; 
@@ -78,7 +77,7 @@
 ;; 
 ;; Example:
 ;; 
-(println "\n2. Higher-Order Functions:\n\nOutputs:\n")
+(println "\n2. Higher-Order Functions Outputs:\n")
 (defn apply-twice [f x]
   (f (f x)))
 
@@ -101,8 +100,8 @@
 ;; 
 ;; Example:
 ;; 
-(println "\n3. Anonymous Functions:\n\nOutputs:\n")
-(print (map (fn [x] (* x x)) [1 2 3 4 5])) ; Output: (1 4 9 16 25)
+(println "\n3. Anonymous Functions Outputs:\n")
+(print (map (fn [x] (* x x)) [1 2 3 4 5]) "\n" ) ; Output: (1 4 9 16 25)
 ;; 
 ;; In this example, the anonymous function `(fn [x] (* x x))` is used with the `map` function to square each element of the input sequence `[1 2 3 4 5]`. The resulting sequence is `(1 4 9 16 25)`.
 
@@ -113,7 +112,7 @@
 ;; 
 ;; Example:
 ;; 
-(println "\n4. Partial Application:\n\nOutputs:\n")
+(println "\n4. Partial Application Outputs:\n")
 (def add-ten (partial + 10))
 ;; 
 (println (add-ten 5)) ; Output: 15
@@ -127,7 +126,7 @@
 ;; 
 ;; Example:
 ;; 
-(println "\n5. Recursive Functions:\n\nOutputs:\n")
+(println "\n5. Recursive Functions Outputs:\n")
 (defn factorial [n]
   (if (<= n 1)
     1
@@ -144,7 +143,7 @@
 ;; 
 ;; Example:
 ;; 
-(println "\n6. Multi-Arity Functions:\n\nOutputs:\n")
+(println "\n6. Multi-Arity Functions Outputs:\n")
 (defn greet
   ([name]
    (println "Hello, " name))
@@ -162,7 +161,7 @@
 ;; 
 ;; Example:
 ;; 
-(println "\n7. Variadic Functions:\n\nOutputs:\n")
+(println "\n7. Variadic Functions Outputs:\n")
 (defn sum-all [& numbers]
   (apply + numbers))
 ;; 
@@ -177,4 +176,4 @@
 
 ;; TODO: Add more details about functions in clojure
 
-(println "\n__________________________________________________________")
+(println "\n__________________________________________________________\n")

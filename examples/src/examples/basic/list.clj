@@ -1,6 +1,16 @@
-(ns examples.data.list)
+(ns examples.basic.list)
+
+(println "\nList: \n")
+
 ;; 
-;; List 
+;; List
+;; Lists in Clojure are immutable, linked lists. They are created using the list function or by using the literal notation with parentheses.
+;; 
+;; Syntax: 
+;;         1. (list item1 item2 ...)
+;; Example: 
+;;         1. (def my-list (list 1 2 3)) ;; using function
+;;         2. (def my-list '(1 2 3)) ;; using literal notation
 ;; 
 ;; Create (Add an element):
 ;; Use the cons function to add an element to the beginning of the list.
@@ -21,6 +31,8 @@
 
 ;; Create a list
 (def my-list '(1 2 3 4 5))
+
+(println "Original list:" my-list)
 
 ;; Create (Add an element)
 (def new-list (cons 6 my-list))
@@ -45,8 +57,10 @@
 ;;    - The `(replace {3 10} my-list)` expression will replace the element at index 3 with value 10 and store in updated-list.
 ;;    - The `(filter #(not= % 2)` expression filter the element list which does not contains the given value and return new list which we can store (ex: deleted-list).
 
-(println "Original list:" my-list)
 (println "New list after create operation:" new-list)
 (println "Updated list after update operation:" updated-list)
 (println "List after delete operation:" deleted-list)
+
+;; TODO: Add list methods with examaples like cons, first, rest, conj and etc..
+
 (println "__________________________________________________________")

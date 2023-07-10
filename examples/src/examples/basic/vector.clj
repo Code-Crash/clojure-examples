@@ -1,10 +1,20 @@
-(ns examples.data.vector)
+(ns examples.basic.vector)
 
-;; In Clojure, you can perform operations on vectors, lists, and maps, in below example that demonstrates these operations along with explanations:
 
+(println "\nVector: \n")
 
 ;; 
-;; VECTOR (ARRAY)
+;; VECTOR (ARRAY): 
+;; 
+;; Vectors are another data structure in Clojure, which are similar to arrays in other programming languages. 
+;; Vectors are also immutable but provide efficient random access by index. 
+;; They are created using square brackets or the vector function.
+;; 
+;; Syntax: 
+;;         1. [elem1 elem2 ...]
+;; Example: 
+;;         1. (def my-vector [1 2 3]) ;; by using square brackets
+;;         2. (def my-vector (vector 1 2 3)) ;; by using vector
 ;; 
 ;; Create (Add an element):
 ;; Use the conj function to add an element to the end of the array.
@@ -25,6 +35,8 @@
 
 ;; Create an array/vector
 (def my-array [1 2 3 4 5])
+
+(println "Original array:" my-array)
 
 ;; Create (Add an element)
 (def new-array (conj my-array 6))
@@ -49,8 +61,10 @@
 ;;    - The `(assoc my-array 3 10)` expression updates the element at index 2 to 10, creating a new updated vector.
 ;;    - The `(subvec my-array 0 2)` expression creates new vector (namely: deleted-array) by excluding the element from position from 0 to 1 (2 - 1 or index - 1).
 
-(println "Original array:" my-array)
 (println "New array after create operation:" new-array)
 (println "Updated array after update operation:" updated-array)
 (println "Array after delete operation:" deleted-array)
+
+;; TODO: Add vector methods with examaples like nth, conj, assoc, subvec and etc..
+
 (println "__________________________________________________________")

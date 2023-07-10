@@ -1,9 +1,21 @@
-(ns examples.data.dictionary)
+(ns examples.basic.dictionary)
+
+
+(println "\nMap: \n")
 
 ;; 
-;; Map (Dictionary)
+;; Map (Dictionary): 
 ;; 
-
+;; Dictionaries, also known as maps, are key-value pairs used to store and retrieve values based on unique keys. 
+;; In Clojure, dictionaries are implemented as hash maps. 
+;; They are created using curly braces or the hash-map function.
+;; 
+;; Syntax: 
+;;         1. {key1 val1 key2 val2 ...}
+;; Example: 
+;;         1. (def my-map {:name "Alice", :age 30}) ;; by using key/pair value
+;;         2. (def my-map (hash-map :name "Alice" :age 30)) ;; by using hash-map
+;; 
 ;; Create (Add a key-value pair):
 ;; Use the assoc function to add a new key-value pair to the dictionary.
 ;; For example, (def my-dictionary (assoc my-dictionary :new-key new-value)) adds a new key-value pair :new-key new-value to the dictionary.
@@ -22,8 +34,9 @@
 ;; Use the dissoc function to create a new dictionary that excludes a specific key and its associated value.
 ;; For example, (def new-dictionary (dissoc my-dictionary :key-to-delete)) creates a new dictionary without the :key-to-delete and its associated value.
 
-
 (def my-dictionary {:name "John" :age 30 :city "New York"})
+
+(println "Original dictionary:" my-dictionary)
 
 ;; Create (Add a key-value pair)
 (def new-dictionary (assoc my-dictionary :occupation "Engineer"))
@@ -38,12 +51,6 @@
 ;; Delete (Remove a key-value pair)
 (def deleted-dictionary (dissoc my-dictionary :city))
 
-(println "Original dictionary:" my-dictionary)
-(println "New dictionary after create operation:" new-dictionary)
-(println "Updated dictionary after update operation:" updated-dictionary)
-(println "Dictionary after removing city" deleted-dictionary)
-(println "__________________________________________________________")
-
 ;; Explanation:
 
 ;; Dictionary (Map):
@@ -51,3 +58,11 @@
 ;;    - The `(get my-dictionary :age)` expression retrieves the value associated with the key `:age` (30).
 ;;    - The `(assoc my-dictionary :age 35)` expression updates the value associated with the key `:age` to 35, creating a new updated dictionary.
 ;;    - The `(dissoc my-dictionary :city)` expression remove the city from existing dictionary and return the new values in deleted-dictionary.
+
+(println "New dictionary after create operation:" new-dictionary)
+(println "Updated dictionary after update operation:" updated-dictionary)
+(println "Dictionary after removing city" deleted-dictionary)
+
+;; TODO: Add dictionary methods with examaples like get, assoc, dissoc, contains? and etc..
+
+(println "__________________________________________________________")

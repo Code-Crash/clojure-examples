@@ -26,7 +26,7 @@ To run the examples, first step **install [clojure](https://clojure.org/guides/i
 3. **[STEP-3]** : *now again use `cd` command to change into [`examples`](./examples/) directory*
 4. **[STEP-4]** : *run command `lein run`, on terminal you will see the output of out different examples.*
 5. **[STEP-5]** : *Now, we need to start exploring code base to understand the syntax and code examples for different clojure features.*
-6. **[STEP-6]** : *Start exploring [Examples](#examples) in sequence to understand the basic of Clojure.*
+6. **[STEP-6]** : *Start exploring [Examples](#examples) in sequence to understand the basic of Clojure, **Comments are our document, don't miss them ;)** We will also update the [document](./examples/doc/intro.md) *
 7. **[STEP-7]** : *Now, you can try and explore [Examples with REPL](#run-examples-with-repl)*
 
 ### Run Examples with REPL
@@ -141,3 +141,8 @@ Explanation of the directory structure:
 - `test`: A directory containing test code for the project.
   - `examples`: The namespace or package for the project's test code.
     - `core_test.clj`: A Clojure test file containing test cases for the core namespace.
+
+## TODO
+
+2. Add more examples for file, db read/write ops
+3. Update [docs](./examples/doc/intro.md)

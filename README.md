@@ -15,6 +15,7 @@ To see the examples with syntax and code, you can read the code base in below se
     2. [Vector (Array)](./examples/src//examples//basic/vector.clj)
     3. [Map (Dictionary)](./examples/src//examples//basic/dictionary.clj)
     4. [Set](./examples/src//examples/basic/set.clj)
+2. [Flow Control](./examples/src/examples/basic/flow_control.clj)
 2. [Functions](./examples/src/examples/basic/functions.clj)
 
 ### Run Examples

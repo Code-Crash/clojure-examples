@@ -145,5 +145,20 @@ Explanation of the directory structure:
 
 ## TODO
 
-2. Add more examples for file, db read/write ops
-3. Update [docs](./examples/doc/intro.md)
+1. Add more examples:
+    1. File Handling
+        1. Local File Handling
+        2. API Based File Upload and Download
+        3. TODO: Add More.... 
+    2. Different Database Connectivity and Operations
+        1. Postgres
+        2. MySQL
+        3. MongoDB
+        4. SQLite
+        5. TODO: Add More....
+    3. Handling For I/O Operations
+    4. Concurrency
+    5. Microservices
+        1. Rest Based Architecture
+        2. Event Based Architecture
+2. Update [docs](./examples/doc/intro.md)
